@@ -199,15 +199,14 @@ h3 {
 }
 
 .avatar {
-  display: grid;
   width: 96px;
   height: 96px;
-  place-items: center;
-  background: #f0d8c4;
-  color: #713b20;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  border: 3px solid #f0d8c4;
   border-radius: 50%;
-  font-size: 2rem;
-  font-weight: 800;
+  box-shadow: 0 12px 30px rgba(23, 32, 26, 0.16);
 }
 
 .profile-panel h2 {

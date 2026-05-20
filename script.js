@@ -1,0 +1,152 @@
+const translations = {
+  es: {
+    navProfile: "Perfil",
+    navProjects: "Proyectos",
+    navExperience: "Experiencia",
+    navContact: "Contacto",
+    heroEyebrow: "Portfolio profesional",
+    heroTitle: "Ingeniero informático en formación, con foco en computación y desarrollo de software.",
+    heroCopy: "Soy una persona creativa, organizada y proactiva, con capacidad de adaptación y motivación por seguir creciendo académica y profesionalmente. Me interesa aplicar mis habilidades técnicas en proyectos reales y ayudar a los equipos a alcanzar sus objetivos.",
+    heroPrimary: "Ver proyectos",
+    heroSecondary: "Contactar",
+    role: "Ingeniero informático",
+    factLocation: "Ubicación",
+    factEducation: "Formación",
+    factEducationValue: "Grado en Ingeniería Informática, UAB",
+    factFocus: "Enfoque",
+    factFocusValue: "Computación, IA y software",
+    profileEyebrow: "Perfil",
+    profileTitle: "Aprendizaje rápido, pensamiento lógico y actitud práctica.",
+    profileCopy: "Actualmente estudio Ingeniería Informática con mención en Computación en la Universitat Autònoma de Barcelona. Mi formación incluye estructuras de datos, algoritmia, programación, inteligencia artificial y desarrollo de software, con experiencia en proyectos colaborativos y trabajos prácticos de programación.",
+    valueTitle: "Propuesta de valor",
+    valueCopy: "Aporto organización, curiosidad técnica y una forma de trabajar orientada a resolver problemas con claridad.",
+    projectsEyebrow: "Proyectos",
+    projectsTitle: "Trabajo académico y técnico que muestra mi base como desarrollador.",
+    projectOneMeta: "Universidad",
+    projectOneTitle: "Proyectos colaborativos de programación",
+    projectOneCopy: "Desarrollo de trabajos prácticos en equipo dentro del grado, aplicando programación, algoritmia y pensamiento analítico.",
+    projectOneA: "Python y C++",
+    projectOneB: "Estructuras de datos y algoritmos",
+    projectOneC: "Colaboración y documentación técnica",
+    projectTwoMeta: "Computación",
+    projectTwoTitle: "Formación en IA y desarrollo de software",
+    projectTwoCopy: "Aprendizaje aplicado en inteligencia artificial, bases de datos y desarrollo de soluciones software dentro del itinerario académico.",
+    projectTwoA: "Inteligencia artificial",
+    projectTwoB: "SQL y análisis de datos",
+    projectTwoC: "Razonamiento lógico y resolución de problemas",
+    projectThreeMeta: "GitHub",
+    projectThreeTitle: "Repositorio de proyectos desarrollados",
+    projectThreeCopy: "Espacio donde recopilo proyectos y prácticas técnicas para mostrar evolución, herramientas usadas y resultados.",
+    projectThreeA: "Código y ejercicios propios",
+    projectThreeB: "Prácticas universitarias",
+    projectThreeC: "Mejora continua del perfil técnico",
+    experienceEyebrow: "Experiencia y educación",
+    experienceTitle: "Una trayectoria orientada a tecnología, aprendizaje y enseñanza.",
+    dateUab: "Sep 2022 - Actualidad",
+    uabTitle: "Grado en Ingeniería Informática, mención en Computación",
+    uabCopy: "Universitat Autònoma de Barcelona. Formación en estructuras de datos, algoritmia, programación, inteligencia artificial y desarrollo de software.",
+    dateTutor: "Oct 2023 - Jun 2024",
+    tutorTitle: "Profesor de Matemáticas, refuerzo académico",
+    tutorCopy: "Maths Advantage Sabadell. Clases individuales y en grupo para estudiantes de Primaria, ESO y Bachillerato, con foco en matemáticas y resolución de problemas.",
+    dateBach: "Sep 2020 - Jun 2022",
+    bachTitle: "Bachillerato Científico-Tecnológico",
+    bachCopy: "IES Ferran Casablancas. Asignaturas destacadas: Matemáticas, Física, Química, Biología y Tecnología.",
+    skillsEyebrow: "Habilidades",
+    skillsTitle: "Tecnologías, idiomas y fortalezas personales.",
+    technicalSkills: "Habilidades técnicas",
+    languagesTitle: "Idiomas",
+    languageChinese: "Chino · Nativo",
+    languageSpanish: "Español · C2",
+    languageCatalan: "Catalán · C1",
+    languageEnglish: "Inglés · B2",
+    contactEyebrow: "Contacto",
+    contactTitle: "Abierto a nuevas oportunidades y proyectos.",
+    contactCopy: "Puedes contactarme por email, teléfono o visitar mis perfiles profesionales."
+  },
+  en: {
+    navProfile: "Profile",
+    navProjects: "Projects",
+    navExperience: "Experience",
+    navContact: "Contact",
+    heroEyebrow: "Professional portfolio",
+    heroTitle: "Computer engineering student focused on computing and software development.",
+    heroCopy: "I am a creative, organized, and proactive person with strong adaptability and motivation to keep growing academically and professionally. I am interested in applying my technical skills to real projects and helping teams achieve their goals.",
+    heroPrimary: "View projects",
+    heroSecondary: "Contact",
+    role: "Computer Engineer",
+    factLocation: "Location",
+    factEducation: "Education",
+    factEducationValue: "Bachelor's Degree in Computer Engineering, UAB",
+    factFocus: "Focus",
+    factFocusValue: "Computing, AI, and software",
+    profileEyebrow: "Profile",
+    profileTitle: "Fast learning, logical thinking, and a practical mindset.",
+    profileCopy: "I am currently studying Computer Engineering with a specialization in Computing at Universitat Autònoma de Barcelona. My training includes data structures, algorithmics, programming, artificial intelligence, and software development, with experience in collaborative projects and practical programming assignments.",
+    valueTitle: "Value proposition",
+    valueCopy: "I bring organization, technical curiosity, and a clear problem-solving approach to my work.",
+    projectsEyebrow: "Projects",
+    projectsTitle: "Academic and technical work that reflects my foundation as a developer.",
+    projectOneMeta: "University",
+    projectOneTitle: "Collaborative programming projects",
+    projectOneCopy: "Team-based practical assignments developed during my degree, applying programming, algorithmics, and analytical thinking.",
+    projectOneA: "Python and C++",
+    projectOneB: "Data structures and algorithms",
+    projectOneC: "Collaboration and technical documentation",
+    projectTwoMeta: "Computing",
+    projectTwoTitle: "Training in AI and software development",
+    projectTwoCopy: "Applied learning in artificial intelligence, databases, and software solution development within my academic path.",
+    projectTwoA: "Artificial intelligence",
+    projectTwoB: "SQL and data analysis",
+    projectTwoC: "Logical reasoning and problem solving",
+    projectThreeMeta: "GitHub",
+    projectThreeTitle: "Repository of developed projects",
+    projectThreeCopy: "A space where I collect projects and technical assignments to show progress, tools used, and results.",
+    projectThreeA: "Personal code and exercises",
+    projectThreeB: "University assignments",
+    projectThreeC: "Continuous improvement of my technical profile",
+    experienceEyebrow: "Experience and education",
+    experienceTitle: "A path focused on technology, learning, and teaching.",
+    dateUab: "Sep 2022 - Present",
+    uabTitle: "Bachelor's Degree in Computer Engineering, specialization in Computing",
+    uabCopy: "Universitat Autònoma de Barcelona. Training in data structures, algorithmics, programming, artificial intelligence, and software development.",
+    dateTutor: "Oct 2023 - Jun 2024",
+    tutorTitle: "Mathematics Tutor, academic support",
+    tutorCopy: "Maths Advantage Sabadell. Individual and group classes for Primary, Secondary, and Bachillerato students, focused on mathematics and problem-solving skills.",
+    dateBach: "Sep 2020 - Jun 2022",
+    bachTitle: "Scientific-Technological Bachillerato",
+    bachCopy: "IES Ferran Casablancas. Highlighted subjects: Mathematics, Physics, Chemistry, Biology, and Technology.",
+    skillsEyebrow: "Skills",
+    skillsTitle: "Technologies, languages, and personal strengths.",
+    technicalSkills: "Technical skills",
+    languagesTitle: "Languages",
+    languageChinese: "Chinese · Native",
+    languageSpanish: "Spanish · C2",
+    languageCatalan: "Catalan · C1",
+    languageEnglish: "English · B2",
+    contactEyebrow: "Contact",
+    contactTitle: "Open to new opportunities and projects.",
+    contactCopy: "You can reach me by email or phone, or visit my professional profiles."
+  }
+};
+
+const languageButtons = document.querySelectorAll(".lang-button");
+const translatableNodes = document.querySelectorAll("[data-i18n]");
+
+function setLanguage(language) {
+  document.documentElement.lang = language;
+  translatableNodes.forEach((node) => {
+    const key = node.dataset.i18n;
+    node.textContent = translations[language][key];
+  });
+  languageButtons.forEach((button) => {
+    button.classList.toggle("active", button.dataset.lang === language);
+    button.setAttribute("aria-pressed", String(button.dataset.lang === language));
+  });
+  localStorage.setItem("portfolioLanguage", language);
+}
+
+languageButtons.forEach((button) => {
+  button.addEventListener("click", () => setLanguage(button.dataset.lang));
+});
+
+setLanguage(localStorage.getItem("portfolioLanguage") || "es");

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YanHao Lin | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio">YanHao Lin</a>
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="#perfil" data-i18n="navProfile">Perfil</a>
+      <a href="#proyectos" data-i18n="navProjects">Proyectos</a>
+      <a href="#experiencia" data-i18n="navExperience">Experiencia</a>
+      <a href="#contacto" data-i18n="navContact">Contacto</a>
+    </nav>
+    <div class="language-switch" aria-label="Cambiar idioma">
+      <button class="lang-button active" type="button" data-lang="es">ES</button>
+      <button class="lang-button" type="button" data-lang="en">EN</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <p class="eyebrow" data-i18n="heroEyebrow">Portfolio profesional</p>
+        <h1 data-i18n="heroTitle">Ingeniero informático en formación, con foco en computación y desarrollo de software.</h1>
+        <p class="hero-copy" data-i18n="heroCopy">
+          Soy una persona creativa, organizada y proactiva, con capacidad de adaptación y motivación por seguir creciendo académica y profesionalmente. Me interesa aplicar mis habilidades técnicas en proyectos reales y ayudar a los equipos a alcanzar sus objetivos.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#proyectos" data-i18n="heroPrimary">Ver proyectos</a>
+          <a class="button secondary" href="mailto:jimlin829@gmail.com" data-i18n="heroSecondary">Contactar</a>
+        </div>
+      </div>
+      <aside class="profile-panel" aria-label="Resumen profesional">
+        <div class="avatar">YL</div>
+        <div>
+          <h2>YanHao Lin</h2>
+          <p data-i18n="role">Ingeniero informático</p>
+        </div>
+        <dl class="quick-facts">
+          <div>
+            <dt data-i18n="factLocation">Ubicación</dt>
+            <dd>Sabadell, Barcelona</dd>
+          </div>
+          <div>
+            <dt data-i18n="factEducation">Formación</dt>
+            <dd data-i18n="factEducationValue">Grado en Ingeniería Informática, UAB</dd>
+          </div>
+          <div>
+            <dt data-i18n="factFocus">Enfoque</dt>
+            <dd data-i18n="factFocusValue">Computación, IA y software</dd>
+          </div>
+        </dl>
+      </aside>
+    </section>
+
+    <section class="section" id="perfil">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="profileEyebrow">Perfil</p>
+        <h2 data-i18n="profileTitle">Aprendizaje rápido, pensamiento lógico y actitud práctica.</h2>
+      </div>
+      <div class="two-column">
+        <p data-i18n="profileCopy">
+          Actualmente estudio Ingeniería Informática con mención en Computación en la Universitat Autònoma de Barcelona. Mi formación incluye estructuras de datos, algoritmia, programación, inteligencia artificial y desarrollo de software, con experiencia en proyectos colaborativos y trabajos prácticos de programación.
+        </p>
+        <div class="highlight-box">
+          <strong data-i18n="valueTitle">Propuesta de valor</strong>
+          <span data-i18n="valueCopy">Aporto organización, curiosidad técnica y una forma de trabajar orientada a resolver problemas con claridad.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="proyectos">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="projectsEyebrow">Proyectos</p>
+        <h2 data-i18n="projectsTitle">Trabajo académico y técnico que muestra mi base como desarrollador.</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-meta" data-i18n="projectOneMeta">Universidad</div>
+          <h3 data-i18n="projectOneTitle">Proyectos colaborativos de programación</h3>
+          <p data-i18n="projectOneCopy">Desarrollo de trabajos prácticos en equipo dentro del grado, aplicando programación, algoritmia y pensamiento analítico.</p>
+          <ul>
+            <li data-i18n="projectOneA">Python y C++</li>
+            <li data-i18n="projectOneB">Estructuras de datos y algoritmos</li>
+            <li data-i18n="projectOneC">Colaboración y documentación técnica</li>
+          </ul>
+        </article>
+        <article class="project-card">
+          <div class="project-meta" data-i18n="projectTwoMeta">Computación</div>
+          <h3 data-i18n="projectTwoTitle">Formación en IA y desarrollo de software</h3>
+          <p data-i18n="projectTwoCopy">Aprendizaje aplicado en inteligencia artificial, bases de datos y desarrollo de soluciones software dentro del itinerario académico.</p>
+          <ul>
+            <li data-i18n="projectTwoA">Inteligencia artificial</li>
+            <li data-i18n="projectTwoB">SQL y análisis de datos</li>
+            <li data-i18n="projectTwoC">Razonamiento lógico y resolución de problemas</li>
+          </ul>
+        </article>
+        <article class="project-card">
+          <div class="project-meta" data-i18n="projectThreeMeta">GitHub</div>
+          <h3 data-i18n="projectThreeTitle">Repositorio de proyectos desarrollados</h3>
+          <p data-i18n="projectThreeCopy">Espacio donde recopilo proyectos y prácticas técnicas para mostrar evolución, herramientas usadas y resultados.</p>
+          <ul>
+            <li data-i18n="projectThreeA">Código y ejercicios propios</li>
+            <li data-i18n="projectThreeB">Prácticas universitarias</li>
+            <li data-i18n="projectThreeC">Mejora continua del perfil técnico</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section timeline-section" id="experiencia">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="experienceEyebrow">Experiencia y educación</p>
+        <h2 data-i18n="experienceTitle">Una trayectoria orientada a tecnología, aprendizaje y enseñanza.</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item">
+          <span data-i18n="dateUab">Sep 2022 - Actualidad</span>
+          <div>
+            <h3 data-i18n="uabTitle">Grado en Ingeniería Informática, mención en Computación</h3>
+            <p data-i18n="uabCopy">Universitat Autònoma de Barcelona. Formación en estructuras de datos, algoritmia, programación, inteligencia artificial y desarrollo de software.</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <span data-i18n="dateTutor">Oct 2023 - Jun 2024</span>
+          <div>
+            <h3 data-i18n="tutorTitle">Profesor de Matemáticas, refuerzo académico</h3>
+            <p data-i18n="tutorCopy">Maths Advantage Sabadell. Clases individuales y en grupo para estudiantes de Primaria, ESO y Bachillerato, con foco en matemáticas y resolución de problemas.</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <span data-i18n="dateBach">Sep 2020 - Jun 2022</span>
+          <div>
+            <h3 data-i18n="bachTitle">Bachillerato Científico-Tecnológico</h3>
+            <p data-i18n="bachCopy">IES Ferran Casablancas. Asignaturas destacadas: Matemáticas, Física, Química, Biología y Tecnología.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section skills-section">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="skillsEyebrow">Habilidades</p>
+        <h2 data-i18n="skillsTitle">Tecnologías, idiomas y fortalezas personales.</h2>
+      </div>
+      <div class="skill-groups">
+        <div>
+          <h3 data-i18n="technicalSkills">Habilidades técnicas</h3>
+          <div class="skills">
+            <span>Python · Advanced</span>
+            <span>C++ · Advanced</span>
+            <span>AWS · Intermediate</span>
+            <span>HTML / JavaScript · Intermediate</span>
+            <span>SQL · Intermediate</span>
+            <span>R · Intermediate</span>
+          </div>
+        </div>
+        <div>
+          <h3 data-i18n="languagesTitle">Idiomas</h3>
+          <div class="skills">
+            <span data-i18n="languageChinese">Chino · Nativo</span>
+            <span data-i18n="languageSpanish">Español · C2</span>
+            <span data-i18n="languageCatalan">Catalán · C1</span>
+            <span data-i18n="languageEnglish">Inglés · B2</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <div>
+        <p class="eyebrow" data-i18n="contactEyebrow">Contacto</p>
+        <h2 data-i18n="contactTitle">Abierto a nuevas oportunidades y proyectos.</h2>
+        <p data-i18n="contactCopy">Puedes contactarme por email, teléfono o visitar mis perfiles profesionales.</p>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:jimlin829@gmail.com">jimlin829@gmail.com</a>
+        <a href="tel:+34617161770">+34 617 161 770</a>
+        <a href="https://github.com/jimlin829" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/yanhao-lin-095829254" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

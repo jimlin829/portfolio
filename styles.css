@@ -337,6 +337,11 @@ h3 {
   background: linear-gradient(180deg, #ffffff 0%, #eef7f4 100%);
 }
 
+.fruity-project {
+  border-color: rgba(199, 111, 63, 0.34);
+  background: linear-gradient(180deg, #ffffff 0%, #fff3df 100%);
+}
+
 .project-link {
   display: inline-flex;
   align-items: center;

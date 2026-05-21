@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruity Pairs | YanHao Lin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header class="hero">
+      <a class="back-link" href="../../#proyectos-disponibles">Portfolio</a>
+      <img class="logo" src="assets/fruity-pairs-logo.png" alt="Fruity Pairs">
+      <p>Find every matching fruit pair.</p>
+    </header>
+
+    <section class="menu" id="menu-screen">
+      <div class="panel difficulty-panel">
+        <p class="eyebrow">Difficulty</p>
+        <div class="difficulty-options" id="difficulty-options"></div>
+      </div>
+
+      <div class="panel menu-actions">
+        <button class="primary" type="button" id="play-button">Play</button>
+        <button type="button" id="instructions-button">Instructions</button>
+        <button type="button" id="clear-button">Clear Records</button>
+      </div>
+
+      <div class="panel ranking-panel">
+        <p class="eyebrow">Local Ranking</p>
+        <ol id="ranking-list"></ol>
+      </div>
+    </section>
+
+    <section class="game hidden" id="game-screen">
+      <div class="hud">
+        <div>
+          <span>Moves</span>
+          <strong id="moves">0</strong>
+        </div>
+        <div>
+          <span>Time</span>
+          <strong id="time">00:00</strong>
+        </div>
+        <div>
+          <span>Difficulty</span>
+          <strong id="difficulty-label">Easy</strong>
+        </div>
+        <button type="button" id="restart-button">Restart</button>
+        <button type="button" id="menu-button">Menu</button>
+      </div>
+      <div class="board" id="board"></div>
+    </section>
+
+    <section class="panel instructions hidden" id="instructions-screen">
+      <h1>How to Play</h1>
+      <ul>
+        <li>Click a card to reveal its fruit.</li>
+        <li>Choose a second card.</li>
+        <li>If the fruits match, the pair stays face up.</li>
+        <li>If they do not match, they flip back after a moment.</li>
+        <li>Find every pair to win the game.</li>
+      </ul>
+      <button type="button" id="instructions-back-button">Back</button>
+    </section>
+
+    <section class="panel victory hidden" id="victory-screen">
+      <h1>You Win!</h1>
+      <p id="victory-message"></p>
+      <ol id="victory-ranking"></ol>
+      <div class="victory-actions">
+        <button class="primary" type="button" id="play-again-button">Play Again</button>
+        <button type="button" id="victory-menu-button">Menu</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

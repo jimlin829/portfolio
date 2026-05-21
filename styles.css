@@ -338,6 +338,16 @@ h3 {
 }
 
 .fruity-project {
+  border-color: rgba(199, 111, 63, 0.35);
+  background: linear-gradient(180deg, #ffffff 0%, #fff6e8 100%);
+}
+
+.taskflow-project {
+  border-color: rgba(59, 130, 196, 0.35);
+  background: linear-gradient(180deg, #ffffff 0%, #edf7ff 100%);
+}
+
+.fruity-project {
   border-color: rgba(199, 111, 63, 0.34);
   background: linear-gradient(180deg, #ffffff 0%, #fff3df 100%);
 }

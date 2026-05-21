@@ -288,7 +288,7 @@ h3 {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
 }
 
@@ -320,6 +320,16 @@ h3 {
   margin: 18px 0 0;
   padding-left: 20px;
   color: var(--muted);
+}
+
+.playable-section {
+  background: #ffffff;
+}
+
+.playable-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
 }
 
 .playable-project {
@@ -443,7 +453,8 @@ h3 {
     min-height: auto;
   }
 
-  .project-grid {
+  .project-grid,
+  .playable-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -453,7 +464,8 @@ h3 {
 }
 
 @media (max-width: 720px) {
-  .project-grid {
+  .project-grid,
+  .playable-grid {
     grid-template-columns: 1fr;
   }
 }

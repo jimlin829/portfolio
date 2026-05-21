@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blackjack 21 | YanHao Lin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header class="game-header">
+      <a class="back-link" href="../../#proyectos">Portfolio</a>
+      <div>
+        <p class="eyebrow">Playable Project</p>
+        <h1>Blackjack 21</h1>
+      </div>
+      <div class="chip-balance">
+        <span>Chips</span>
+        <strong id="chips">1000</strong>
+      </div>
+    </header>
+
+    <section class="table" aria-live="polite">
+      <div class="status-line" id="status">Place a bet and press Deal.</div>
+
+      <section class="hand-area">
+        <div class="hand-heading">
+          <h2>Dealer</h2>
+          <span id="dealer-score">Visible score: 0</span>
+        </div>
+        <div class="cards" id="dealer-cards"></div>
+      </section>
+
+      <section class="hand-area">
+        <div class="hand-heading">
+          <h2>Player</h2>
+          <span id="player-score">Score: 0</span>
+        </div>
+        <div class="cards" id="player-cards"></div>
+      </section>
+    </section>
+
+    <section class="controls">
+      <div class="bet-panel">
+        <div>
+          <span class="label">Current Bet</span>
+          <strong id="current-bet">100</strong>
+        </div>
+        <div class="button-row">
+          <button type="button" data-bet="-50">-50</button>
+          <button type="button" data-bet="-10">-10</button>
+          <button type="button" data-bet="10">+10</button>
+          <button type="button" data-bet="50">+50</button>
+          <button class="primary" type="button" id="deal-button">Deal</button>
+          <button class="primary hidden" type="button" id="next-button">Next</button>
+        </div>
+      </div>
+
+      <div class="action-panel">
+        <span class="label">Actions</span>
+        <div class="button-row">
+          <button class="hit" type="button" id="hit-button">Hit</button>
+          <button class="stand" type="button" id="stand-button">Stand</button>
+          <button class="danger" type="button" id="reset-button">Reset</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

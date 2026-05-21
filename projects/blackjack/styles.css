@@ -1,0 +1,315 @@
+:root {
+  --bg: #092d1d;
+  --table: #147744;
+  --table-dark: #0d4f31;
+  --panel: #0b4229;
+  --ink: #f7fff9;
+  --muted: #b8d3c2;
+  --line: rgba(255, 255, 255, 0.25);
+  --gold: #f2c94c;
+  --blue: #3b82c4;
+  --red: #a83232;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: radial-gradient(circle at top, #1a8a52 0, var(--bg) 58%);
+  color: var(--ink);
+  font-family: Inter, Arial, sans-serif;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+.game-shell {
+  width: min(1120px, calc(100vw - 32px));
+  margin: 0 auto;
+  padding: 24px 0;
+}
+
+.game-header {
+  display: grid;
+  grid-template-columns: 160px minmax(0, 1fr) 160px;
+  align-items: center;
+  gap: 18px;
+}
+
+.back-link {
+  color: var(--muted);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  color: var(--ink);
+}
+
+.eyebrow,
+.label {
+  display: block;
+  margin: 0 0 4px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+h1 {
+  font-size: clamp(2.4rem, 6vw, 4.5rem);
+  line-height: 1;
+  text-align: center;
+}
+
+.chip-balance {
+  justify-self: end;
+  padding: 12px 18px;
+  background: rgba(9, 45, 29, 0.72);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  text-align: right;
+}
+
+.chip-balance span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.chip-balance strong {
+  color: var(--gold);
+  font-size: 1.45rem;
+}
+
+.table {
+  min-height: 530px;
+  margin-top: 20px;
+  padding: 20px 28px 28px;
+  background: var(--table);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.22);
+}
+
+.status-line {
+  min-height: 42px;
+  padding: 10px 14px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.status-line.win {
+  color: #8ec5ff;
+}
+
+.status-line.loss {
+  color: #ff9a9a;
+}
+
+.hand-area {
+  margin-top: 26px;
+}
+
+.hand-heading {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+}
+
+.hand-heading h2 {
+  font-size: 2rem;
+}
+
+.hand-heading span {
+  color: var(--ink);
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  min-height: 126px;
+  margin-top: 12px;
+}
+
+.card {
+  width: 86px;
+  height: 118px;
+  position: relative;
+  display: grid;
+  place-items: center;
+  background: #ffffff;
+  border: 2px solid #d8e1ea;
+  border-radius: 8px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+  color: #18222d;
+  font-size: 2rem;
+  font-weight: 900;
+  animation: dealIn 180ms ease-out;
+}
+
+.card.red {
+  color: #d92935;
+}
+
+.card::before,
+.card::after {
+  position: absolute;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.card::before {
+  content: attr(data-rank) " " attr(data-suit);
+  top: 8px;
+  left: 8px;
+}
+
+.card::after {
+  content: attr(data-rank) " " attr(data-suit);
+  right: 8px;
+  bottom: 8px;
+  transform: rotate(180deg);
+}
+
+.card.back {
+  background: repeating-linear-gradient(45deg, #b9c9dc 0 8px, #d7e2ee 8px 16px);
+  color: transparent;
+}
+
+.card.back::before,
+.card.back::after {
+  content: "";
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(280px, 0.8fr);
+  gap: 18px;
+  margin-top: 14px;
+}
+
+.bet-panel,
+.action-panel {
+  display: grid;
+  gap: 10px;
+  padding: 16px;
+  background: rgba(9, 45, 29, 0.86);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+}
+
+.bet-panel {
+  grid-template-columns: 130px minmax(0, 1fr);
+  align-items: center;
+}
+
+#current-bet {
+  display: block;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+button {
+  min-height: 42px;
+  padding: 0 18px;
+  background: #565656;
+  border: 2px solid rgba(255, 255, 255, 0.86);
+  border-radius: 8px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+button:hover:not(:disabled) {
+  filter: brightness(1.14);
+  transform: translateY(-1px);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.primary {
+  background: var(--blue);
+}
+
+.hit {
+  background: #25915a;
+}
+
+.stand {
+  background: #b06b2b;
+}
+
+.danger {
+  background: var(--red);
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes dealIn {
+  from {
+    opacity: 0;
+    transform: translate(24px, -12px) scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+@media (max-width: 760px) {
+  .game-header,
+  .controls,
+  .bet-panel {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    text-align: left;
+  }
+
+  .chip-balance {
+    justify-self: start;
+    text-align: left;
+  }
+
+  .table {
+    min-height: auto;
+    padding: 18px;
+  }
+
+  .card {
+    width: 72px;
+    height: 100px;
+    font-size: 1.55rem;
+  }
+}

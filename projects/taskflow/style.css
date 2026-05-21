@@ -13,6 +13,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     padding: 40px 20px;
+    overflow-x: hidden;
 }
 
 .app-container {
@@ -23,6 +24,7 @@ body {
     border-radius: 24px;
     padding: 32px;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
 }
 
 .app-header {
@@ -117,11 +119,14 @@ body {
 
 .filters {
     display: flex;
+    flex-wrap: wrap;
     gap: 12px;
     margin-bottom: 24px;
 }
 
 .filter-button {
+    flex: 1;
+    min-width: 120px;
     padding: 10px 18px;
     border: 1px solid #374151;
     background: #1f2937;
@@ -524,4 +529,16 @@ body.light-theme .drag-hint {
     .brand-block p {
         margin-left: 0;
     }
+
+    .filters {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .filter-button {
+        width: 100%;
+        min-width: 0;
+    }
 }
+

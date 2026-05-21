@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow - ToDo App</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="app-container">
+        <header class="app-header">
+            <div class="brand-block">
+                <img class="app-logo" src="assets/logo-clean.png" alt="TaskFlow">
+                <p>Organize your tasks, priorities and deadlines.</p>
+            </div>
+
+            <button id="themeToggleButton" class="theme-toggle-button">
+                Light Mode
+            </button>
+        </header>
+
+        <section class="task-form">
+            <input 
+                type="text" 
+                id="taskInput" 
+                placeholder="Write a new task..."
+            >
+
+            <select id="priorityInput">
+                <option value="low">Low</option>
+                <option value="medium" selected>Medium</option>
+                <option value="high">High</option>
+            </select>
+
+            <input 
+                type="datetime-local" 
+                id="dateInput"
+                title="Due date and time"
+            >
+
+            <button id="addTaskButton">Add Task</button>
+
+            <textarea 
+                id="descriptionInput" 
+                placeholder="Optional task description..."
+            ></textarea>
+        </section>
+
+        <section class="stats">
+            <div>
+                <span id="totalTasks">0</span>
+                <p>Total</p>
+            </div>
+            <div>
+                <span id="pendingTasks">0</span>
+                <p>Pending</p>
+            </div>
+            <div>
+                <span id="completedTasks">0</span>
+                <p>Completed</p>
+            </div>
+        </section>
+
+        <section class="toolbar">
+            <input 
+                type="text" 
+                id="searchInput" 
+                placeholder="Search tasks..."
+            >
+
+            <select id="sortInput">
+                <option value="manual">Manual order</option>
+                <option value="created">Sort by creation</option>
+                <option value="priority">Sort by priority</option>
+                <option value="date">Sort by due date</option>
+            </select>
+
+            <button id="clearCompletedButton">Clear Completed</button>
+        </section>
+        
+        <section class="filters">
+            <button class="filter-button active" data-filter="all">All</button>
+            <button class="filter-button" data-filter="pending">Pending</button>
+            <button class="filter-button" data-filter="completed">Completed</button>
+            <button class="filter-button" data-filter="overdue">Overdue</button>
+        </section>
+        
+        <section class="task-list" id="taskList">
+            <!-- Tasks will be created here with JavaScript -->
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

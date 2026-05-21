@@ -352,12 +352,18 @@ h3 {
   background: linear-gradient(180deg, #ffffff 0%, #fff3df 100%);
 }
 
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
 .project-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   min-height: 42px;
-  margin-top: 20px;
   padding: 0 16px;
   background: var(--accent);
   border-radius: 8px;
@@ -365,9 +371,16 @@ h3 {
   font-weight: 800;
 }
 
+.secondary-link {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
 .project-link:hover,
 .project-link:focus {
   background: var(--accent-dark);
+  color: #ffffff;
   transform: translateY(-1px);
 }
 

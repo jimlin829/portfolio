@@ -3,165 +3,168 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de YanHao Lin, graduado en Ingeniería Informática especializado en computación, automatización, inteligencia artificial y desarrollo web.">
   <title>YanHao Lin | Portfolio</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="#inicio">YanHao Lin</a>
+    <a class="brand" href="#inicio" aria-label="Volver al inicio">
+      <span>YHL</span>
+      <strong>YanHao Lin</strong>
+    </a>
     <nav class="nav" aria-label="Navegación principal">
       <a href="#perfil" data-i18n="navProfile">Perfil</a>
       <a href="#proyectos" data-i18n="navProjects">Proyectos</a>
       <a href="#experiencia" data-i18n="navExperience">Experiencia</a>
+      <a href="#habilidades" data-i18n="navSkills">Skills</a>
       <a href="#contacto" data-i18n="navContact">Contacto</a>
     </nav>
     <div class="language-switch" aria-label="Cambiar idioma">
-      <button class="lang-button active" type="button" data-lang="es">ES</button>
-      <button class="lang-button" type="button" data-lang="en">EN</button>
+      <button class="lang-button active" type="button" data-lang="es" aria-pressed="true">ES</button>
+      <button class="lang-button" type="button" data-lang="en" aria-pressed="false">EN</button>
     </div>
   </header>
 
   <main>
     <section class="hero" id="inicio">
-      <div class="hero-content">
-        <p class="eyebrow" data-i18n="heroEyebrow">Portfolio profesional</p>
-        <h1 data-i18n="heroTitle">Ingeniero informático en formación, con foco en computación, inteligencia artificial y desarrollo de software.</h1>
-        <p class="hero-copy" data-i18n="heroCopy">
-          Soy una persona creativa, organizada y proactiva, con capacidad de adaptación y motivación por seguir creciendo académica y profesionalmente. Me interesa aplicar mis habilidades técnicas en proyectos reales y ayudar a los equipos a alcanzar sus objetivos.
-        </p>
-        <div class="hero-actions">
-          <a class="button primary" href="#proyectos" data-i18n="heroPrimary">Ver proyectos</a>
-          <a class="button secondary" href="mailto:jimlin829@gmail.com" data-i18n="heroSecondary">Contactar</a>
+      <div class="hero-visual" aria-label="Retrato profesional de YanHao Lin">
+        <div class="portrait-frame">
+          <img class="avatar" src="assets/profile-selected.png?v=3" alt="Foto de perfil profesional de YanHao Lin">
+          <div class="status-card">
+            <span data-i18n="statusLabel">Disponible para retos junior</span>
+            <strong data-i18n="statusValue">Software · IA · Automatización</strong>
+          </div>
         </div>
       </div>
-      <aside class="profile-panel" aria-label="Resumen profesional">
-        <img class="avatar" src="assets/profile.jpg" alt="Foto de perfil de YanHao Lin">
-        <div>
-          <h2>YanHao Lin</h2>
-          <p data-i18n="role">Ingeniero informático</p>
+
+      <div class="hero-content">
+        <p class="eyebrow" data-i18n="heroEyebrow">Portfolio técnico</p>
+        <h1 data-i18n="heroTitle">Graduado en Ingeniería Informática con foco en software, automatización, análisis de datos e inteligencia artificial.</h1>
+        <p class="hero-copy" data-i18n="heroCopy">
+          Graduado en Ingeniería Informática con mención en Computación por la UAB, con experiencia en validación de software, automatización con Python, proyectos web y docencia de matemáticas.
+        </p>
+        <div class="hero-actions" aria-label="Acciones principales">
+          <a class="button primary" href="#proyectos" data-i18n="heroPrimary">Ver proyectos</a>
+          <a class="button secondary" href="assets/CV-ESPAÑOL.pdf" target="_blank" rel="noreferrer" data-cv-link data-i18n="heroCv">Descargar CV</a>
+          <a class="button ghost" href="mailto:jimlin829@gmail.com" data-i18n="heroSecondary">Contactar</a>
         </div>
-        <dl class="quick-facts">
+        <dl class="signal-strip" aria-label="Datos rápidos">
           <div>
-            <dt data-i18n="factLocation">Ubicación</dt>
-            <dd>Sabadell, Barcelona</dd>
+            <dt data-i18n="signalDegree">Formación</dt>
+            <dd data-i18n="signalDegreeValue">Ing. Informática · UAB</dd>
           </div>
           <div>
-            <dt data-i18n="factEducation">Formación</dt>
-            <dd data-i18n="factEducationValue">Grado en Ingeniería Informática, UAB</dd>
+            <dt data-i18n="signalStack">Stack</dt>
+            <dd>Python · C++ · JS</dd>
           </div>
           <div>
-            <dt data-i18n="factFocus">Enfoque</dt>
-            <dd data-i18n="factFocusValue">Computación, IA y software</dd>
+            <dt data-i18n="signalLanguages">Idiomas</dt>
+            <dd>ZH · ES · CA · EN</dd>
           </div>
         </dl>
-      </aside>
+      </div>
     </section>
 
-    <section class="section" id="perfil">
+    <section class="section profile-section" id="perfil">
       <div class="section-heading">
         <p class="eyebrow" data-i18n="profileEyebrow">Perfil</p>
-        <h2 data-i18n="profileTitle">Aprendizaje rápido, pensamiento lógico y actitud práctica.</h2>
+        <h2 data-i18n="profileTitle">Un perfil técnico con base fuerte, curiosidad práctica y atención al detalle.</h2>
       </div>
-      <div class="two-column">
-        <p data-i18n="profileCopy">
-          Actualmente estudio Ingeniería Informática con mención en Computación en la Universitat Autònoma de Barcelona. Mi formación incluye estructuras de datos, algoritmia, programación, inteligencia artificial y desarrollo de software, con experiencia en proyectos colaborativos y trabajos prácticos de programación.
-        </p>
-        <div class="highlight-box">
-          <strong data-i18n="valueTitle">Propuesta de valor</strong>
-          <span data-i18n="valueCopy">Aporto organización, curiosidad técnica y una forma de trabajar orientada a resolver problemas con claridad.</span>
+      <div class="profile-grid">
+        <article class="statement">
+          <p data-i18n="profileCopy">
+            Me interesa especialmente la automatización, la inteligencia artificial y el desarrollo de internet y webs. Busco entornos donde aplicar conocimientos técnicos, afrontar retos nuevos y colaborar con equipos que valoren la claridad, la organización y la mejora continua.
+          </p>
+        </article>
+        <article class="value-card">
+          <span class="card-index">01</span>
+          <h3 data-i18n="valueOneTitle">Automatización</h3>
+          <p data-i18n="valueOneCopy">Scripts en Python para facilitar validación, análisis y procesos repetitivos.</p>
+        </article>
+        <article class="value-card">
+          <span class="card-index">02</span>
+          <h3 data-i18n="valueTwoTitle">Razonamiento</h3>
+          <p data-i18n="valueTwoCopy">Base en algoritmia, estructuras de datos, programación orientada a objetos y pensamiento lógico.</p>
+        </article>
+        <article class="value-card">
+          <span class="card-index">03</span>
+          <h3 data-i18n="valueThreeTitle">Producto web</h3>
+          <p data-i18n="valueThreeCopy">Interfaces y demos jugables construidas con HTML, CSS y JavaScript.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="proyectos">
+      <div class="section-heading split">
+        <div>
+          <p class="eyebrow" data-i18n="projectsEyebrow">Proyectos</p>
+          <h2 data-i18n="projectsTitle">Demos reales para probar, código para revisar y práctica técnica aplicada.</h2>
+          <p class="section-note" data-i18n="projectsNote">Aquí muestro algunas demos visitables; en GitHub hay más proyectos desarrollados durante la carrera y por cuenta propia.</p>
         </div>
+        <a class="text-link" href="https://github.com/jimlin829" target="_blank" rel="noreferrer" data-i18n="githubLink">Ver GitHub</a>
       </div>
-    </section>
 
-    <section class="section" id="proyectos">
-      <div class="section-heading">
-        <p class="eyebrow" data-i18n="projectsEyebrow">Proyectos</p>
-        <h2 data-i18n="projectsTitle">Trabajo académico y técnico que muestra mi base como desarrollador.</h2>
-      </div>
-      <div class="project-grid">
-        <article class="project-card">
-          <div class="project-meta" data-i18n="projectOneMeta">Universidad</div>
-          <h3 data-i18n="projectOneTitle">Proyectos colaborativos de programación</h3>
-          <p data-i18n="projectOneCopy">Desarrollo de trabajos prácticos en equipo dentro del grado, aplicando programación, algoritmia y pensamiento analítico.</p>
-          <ul>
-            <li data-i18n="projectOneA">Python y C++</li>
-            <li data-i18n="projectOneB">Estructuras de datos y algoritmos</li>
-            <li data-i18n="projectOneC">Colaboración y documentación técnica</li>
-          </ul>
-        </article>
-        <article class="project-card">
-          <div class="project-meta" data-i18n="projectTwoMeta">Computación</div>
-          <h3 data-i18n="projectTwoTitle">Formación en IA y desarrollo de software</h3>
-          <p data-i18n="projectTwoCopy">Aprendizaje aplicado en inteligencia artificial, bases de datos y desarrollo de soluciones software dentro del itinerario académico.</p>
-          <ul>
-            <li data-i18n="projectTwoA">Inteligencia artificial</li>
-            <li data-i18n="projectTwoB">SQL y análisis de datos</li>
-            <li data-i18n="projectTwoC">Razonamiento lógico y resolución de problemas</li>
-          </ul>
-        </article>
-        <article class="project-card">
-          <div class="project-meta" data-i18n="projectThreeMeta">GitHub</div>
-          <h3 data-i18n="projectThreeTitle">Repositorio de proyectos desarrollados</h3>
-          <p data-i18n="projectThreeCopy">Espacio donde recopilo proyectos y prácticas técnicas para mostrar evolución, herramientas usadas y resultados.</p>
-          <ul>
-            <li data-i18n="projectThreeA">Código y ejercicios propios</li>
-            <li data-i18n="projectThreeB">Prácticas universitarias</li>
-            <li data-i18n="projectThreeC">Mejora continua del perfil técnico</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section class="section playable-section" id="proyectos-disponibles">
-      <div class="section-heading">
-        <p class="eyebrow" data-i18n="playableEyebrow">Proyectos desarrollados disponibles</p>
-        <h2 data-i18n="playableTitle">Demos online listas para probar directamente desde el navegador.</h2>
-      </div>
-      <div class="playable-grid">
-        <article class="project-card playable-project">
-          <div class="project-meta" data-i18n="projectBlackjackMeta">Juego online</div>
+      <div class="featured-grid">
+        <article class="project-card featured-card">
+          <div class="project-topline">
+            <span data-i18n="projectBlackjackMeta">Juego online</span>
+            <strong>01</strong>
+          </div>
           <h3 data-i18n="projectBlackjackTitle">Blackjack 21</h3>
-          <p data-i18n="projectBlackjackCopy">Juego interactivo de Blackjack con sistema de fichas, apuestas, dealer automatico y deteccion de Blackjack natural.</p>
-          <ul>
-            <li data-i18n="projectBlackjackA">HTML, CSS y JavaScript</li>
-            <li data-i18n="projectBlackjackB">Logica de juego y estados</li>
-            <li data-i18n="projectBlackjackC">Demo jugable en navegador</li>
+          <p data-i18n="projectBlackjackCopy">Proyecto desarrollado también con Python; la demo disponible aquí es una versión simplificada en HTML, CSS y JavaScript para poder probarla desde el navegador.</p>
+          <ul class="tag-list">
+            <li>Python</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li data-i18n="tagGameState">Estados de juego</li>
           </ul>
           <div class="project-actions">
             <a class="project-link" href="projects/blackjack/" data-i18n="projectBlackjackLink">Jugar online</a>
-            <a class="project-link secondary-link" href="https://github.com/jimlin829/blackjack" target="_blank" rel="noreferrer" data-i18n="projectCodeLink">Ver codigo</a>
+            <a class="project-link muted" href="https://github.com/jimlin829/blackjack" target="_blank" rel="noreferrer" data-i18n="projectCodeLink">Código</a>
           </div>
         </article>
-        <article class="project-card playable-project fruity-project">
-          <div class="project-meta" data-i18n="projectFruityMeta">Juego online</div>
+
+        <article class="project-card fruity-card">
+          <div class="project-topline">
+            <span data-i18n="projectFruityMeta">Juego online</span>
+            <strong>02</strong>
+          </div>
           <h3 data-i18n="projectFruityTitle">Fruity Pairs</h3>
-          <p data-i18n="projectFruityCopy">Juego de memoria con tematica de frutas creado con Python y Pygame, con animaciones, dificultades y ranking local.</p>
-          <ul>
-            <li data-i18n="projectFruityA">Python y Pygame</li>
-            <li data-i18n="projectFruityB">Animacion de cartas y logica de parejas</li>
-            <li data-i18n="projectFruityC">Ranking local guardado en JSON</li>
+          <p data-i18n="projectFruityCopy">Juego de memoria con temática de frutas creado con Python y Pygame, adaptado como demo web con animaciones, dificultades y ranking local.</p>
+          <ul class="tag-list">
+            <li>Python</li>
+            <li>Pygame</li>
+            <li>JSON</li>
+            <li data-i18n="tagMemory">Memoria</li>
           </ul>
           <div class="project-actions">
             <a class="project-link" href="projects/fruity-pairs/" data-i18n="projectFruityLink">Jugar online</a>
-            <a class="project-link secondary-link" href="https://github.com/jimlin829/fruity-pairs" target="_blank" rel="noreferrer" data-i18n="projectCodeLink">Ver codigo</a>
+            <a class="project-link muted" href="https://github.com/jimlin829/fruity-pairs" target="_blank" rel="noreferrer" data-i18n="projectCodeLink">Código</a>
           </div>
         </article>
-        <article class="project-card playable-project taskflow-project">
-          <div class="project-meta" data-i18n="projectTaskFlowMeta">Aplicacion online</div>
+
+        <article class="project-card task-card">
+          <div class="project-topline">
+            <span data-i18n="projectTaskFlowMeta">Aplicación online</span>
+            <strong>03</strong>
+          </div>
           <h3 data-i18n="projectTaskFlowTitle">TaskFlow</h3>
-          <p data-i18n="projectTaskFlowCopy">Aplicacion de tareas para organizar prioridades, fechas limite, estados y busqueda con persistencia local.</p>
-          <ul>
-            <li data-i18n="projectTaskFlowA">HTML, CSS y JavaScript</li>
-            <li data-i18n="projectTaskFlowB">Filtros, ordenacion y busqueda</li>
-            <li data-i18n="projectTaskFlowC">Datos guardados con localStorage</li>
+          <p data-i18n="projectTaskFlowCopy">Aplicación de tareas para organizar prioridades, fechas límite, estados, búsqueda y persistencia local.</p>
+          <ul class="tag-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>localStorage</li>
           </ul>
           <div class="project-actions">
             <a class="project-link" href="projects/taskflow/" data-i18n="projectTaskFlowLink">Abrir app</a>
-            <a class="project-link secondary-link" href="https://github.com/jimlin829/taskflow" target="_blank" rel="noreferrer" data-i18n="projectCodeLink">Ver codigo</a>
+            <a class="project-link muted" href="https://github.com/jimlin829/taskflow" target="_blank" rel="noreferrer" data-i18n="projectCodeLink">Código</a>
           </div>
         </article>
       </div>
@@ -170,71 +173,87 @@
     <section class="section timeline-section" id="experiencia">
       <div class="section-heading">
         <p class="eyebrow" data-i18n="experienceEyebrow">Experiencia y educación</p>
-        <h2 data-i18n="experienceTitle">Una trayectoria orientada a tecnología, aprendizaje y enseñanza.</h2>
+        <h2 data-i18n="experienceTitle">Tecnología, validación, enseñanza y aprendizaje continuo.</h2>
       </div>
       <div class="timeline">
         <article class="timeline-item">
-          <span data-i18n="dateUab">Sep 2022 - Actualidad</span>
+          <time data-i18n="dateElectrans">May 2026 - Jul 2026</time>
+          <div>
+            <h3 data-i18n="electransTitle">Prácticas curriculares · ELECTRANS, Calidad / RAMS</h3>
+            <p data-i18n="electransCopy">Participación en proyectos vinculados a seguridad ferroviaria, procesos de calidad, validación de software, revisión de evidencias técnicas y automatización con Python.</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <time data-i18n="dateUab">Sep 2022 - Jul 2026</time>
           <div>
             <h3 data-i18n="uabTitle">Grado en Ingeniería Informática, mención en Computación</h3>
-            <p data-i18n="uabCopy">Universitat Autònoma de Barcelona. Formación en estructuras de datos, algoritmia, programación, inteligencia artificial y desarrollo de software.</p>
+            <p data-i18n="uabCopy">Universitat Autònoma de Barcelona. Formación en programación, estructuras de datos, algoritmia, inteligencia artificial, machine learning y visión por computadora.</p>
           </div>
         </article>
         <article class="timeline-item">
-          <span data-i18n="dateTutor">Oct 2023 - Jun 2024</span>
+          <time data-i18n="dateTutor">Oct 2023 - Jun 2024</time>
           <div>
-            <h3 data-i18n="tutorTitle">Profesor de Matemáticas, refuerzo académico</h3>
-            <p data-i18n="tutorCopy">Maths Advantage Sabadell. Clases individuales y en grupo para estudiantes de Primaria, ESO y Bachillerato, con foco en matemáticas y resolución de problemas.</p>
-          </div>
-        </article>
-        <article class="timeline-item">
-          <span data-i18n="dateBach">Sep 2020 - Jun 2022</span>
-          <div>
-            <h3 data-i18n="bachTitle">Bachillerato Científico-Tecnológico</h3>
-            <p data-i18n="bachCopy">IES Ferran Casablancas. Asignaturas destacadas: Matemáticas, Física, Química, Biología y Tecnología.</p>
+            <h3 data-i18n="tutorTitle">Profesor de Matemáticas · Maths Advantage Sabadell</h3>
+            <p data-i18n="tutorCopy">Clases individuales y en grupo para Primaria, ESO y Bachillerato, con refuerzo en matemáticas y física, resolución de problemas y seguimiento personalizado.</p>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="section skills-section">
-      <div class="section-heading">
-        <p class="eyebrow" data-i18n="skillsEyebrow">Habilidades</p>
-        <h2 data-i18n="skillsTitle">Tecnologías, idiomas y fortalezas personales.</h2>
-      </div>
-      <div class="skill-groups">
+    <section class="section skills-section" id="habilidades">
+      <div class="section-heading split">
         <div>
-          <h3 data-i18n="technicalSkills">Habilidades técnicas</h3>
-          <div class="skills">
-            <span>Python · Advanced</span>
-            <span>C++ · Advanced</span>
-            <span>AWS · Intermediate</span>
-            <span>HTML / JavaScript · Intermediate</span>
-            <span>SQL · Intermediate</span>
-            <span>R · Intermediate</span>
-          </div>
+          <p class="eyebrow" data-i18n="skillsEyebrow">Habilidades</p>
+          <h2 data-i18n="skillsTitle">Herramientas técnicas, competencias y comunicación multilingüe.</h2>
         </div>
-        <div>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-panel">
+          <h3 data-i18n="technicalSkills">Stack técnico</h3>
+          <div class="meter-list">
+            <span>Python <strong data-i18n="levelAdvanced">Avanzado</strong></span>
+            <span>C++ <strong data-i18n="levelAdvanced">Avanzado</strong></span>
+            <span>Git / GitHub <strong data-i18n="levelAdvanced">Avanzado</strong></span>
+            <span>HTML / JavaScript <strong data-i18n="levelUpperMid">Intermedio alto</strong></span>
+            <span>SQL <strong data-i18n="levelBasicMid">Básico-intermedio</strong></span>
+            <span>AWS <strong data-i18n="levelBasicMid">Básico-intermedio</strong></span>
+            <span>R <strong data-i18n="levelBasicMid">Básico-intermedio</strong></span>
+          </div>
+        </article>
+        <article class="skill-panel">
+          <h3 data-i18n="competenciesTitle">Competencias destacadas</h3>
+          <div class="chip-cloud">
+            <span data-i18n="compOop">Programación orientada a objetos</span>
+            <span data-i18n="compFast">Organización y aprendizaje rápido</span>
+            <span data-i18n="compTeam">Trabajo en equipo</span>
+            <span>Machine Learning</span>
+            <span data-i18n="compVision">Visión por computadora</span>
+            <span data-i18n="compLogic">Pensamiento lógico y analítico</span>
+          </div>
+        </article>
+        <article class="skill-panel">
           <h3 data-i18n="languagesTitle">Idiomas</h3>
-          <div class="skills">
-            <span data-i18n="languageChinese">Chino · Nativo</span>
+          <div class="language-list">
+            <span data-i18n="languageChinese">Chino · Nativo / alto</span>
             <span data-i18n="languageSpanish">Español · C2</span>
-            <span data-i18n="languageCatalan">Catalán · C1</span>
+            <span data-i18n="languageCatalan">Catalán · C2</span>
             <span data-i18n="languageEnglish">Inglés · B2</span>
           </div>
-        </div>
+        </article>
       </div>
     </section>
 
     <section class="contact" id="contacto">
       <div>
         <p class="eyebrow" data-i18n="contactEyebrow">Contacto</p>
-        <h2 data-i18n="contactTitle">Abierto a nuevas oportunidades y proyectos.</h2>
-        <p data-i18n="contactCopy">Puedes contactarme por email, teléfono o visitar mis perfiles profesionales.</p>
+        <h2 data-i18n="contactTitle">Abierto a oportunidades junior, prácticas y nuevos retos tecnológicos.</h2>
+        <p data-i18n="contactCopy">Si buscas a alguien con base técnica, capacidad de aprendizaje y ganas de construir, podemos hablar.</p>
       </div>
-      <div class="contact-links">
+      <div class="contact-links" aria-label="Enlaces de contacto">
         <a href="mailto:jimlin829@gmail.com">jimlin829@gmail.com</a>
         <a href="tel:+34617161770">+34 617 161 770</a>
+        <a href="https://www.google.com/maps/place/Sabadell,+Barcelona" target="_blank" rel="noreferrer">Sabadell · Barcelona</a>
+        <a href="https://www.yhlinworks.com" target="_blank" rel="noreferrer">yhlinworks.com</a>
         <a href="https://github.com/jimlin829" target="_blank" rel="noreferrer">GitHub</a>
         <a href="https://www.linkedin.com/in/yanhao-lin-095829254" target="_blank" rel="noreferrer">LinkedIn</a>
       </div>

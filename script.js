@@ -3,198 +3,239 @@ const translations = {
     navProfile: "Perfil",
     navProjects: "Proyectos",
     navExperience: "Experiencia",
+    navSkills: "Skills",
     navContact: "Contacto",
-    heroEyebrow: "Portfolio profesional",
-    heroTitle: "Ingeniero informático en formación, con foco en computación, inteligencia artificial y desarrollo de software.",
-    heroCopy: "Soy una persona creativa, organizada y proactiva, con capacidad de adaptación y motivación por seguir creciendo académica y profesionalmente. Me interesa aplicar mis habilidades técnicas en proyectos reales y ayudar a los equipos a alcanzar sus objetivos.",
+    statusLabel: "Disponible para retos junior",
+    statusValue: "Software · IA · Automatización",
+    heroEyebrow: "Portfolio técnico",
+    heroTitle: "Graduado en Ingeniería Informática con foco en software, automatización, análisis de datos e inteligencia artificial.",
+    heroCopy: "Graduado en Ingeniería Informática con mención en Computación por la UAB, con experiencia en validación de software, automatización con Python, proyectos web y docencia de matemáticas.",
     heroPrimary: "Ver proyectos",
+    heroCv: "Descargar CV",
     heroSecondary: "Contactar",
-    role: "Ingeniero informático",
-    factLocation: "Ubicación",
-    factEducation: "Formación",
-    factEducationValue: "Grado en Ingeniería Informática, UAB",
-    factFocus: "Enfoque",
-    factFocusValue: "Computación, IA y software",
+    signalDegree: "Formación",
+    signalDegreeValue: "Ing. Informática · UAB",
+    signalStack: "Stack",
+    signalLanguages: "Idiomas",
     profileEyebrow: "Perfil",
-    profileTitle: "Aprendizaje rápido, pensamiento lógico y actitud práctica.",
-    profileCopy: "Actualmente estudio Ingeniería Informática con mención en Computación en la Universitat Autònoma de Barcelona. Mi formación incluye estructuras de datos, algoritmia, programación, inteligencia artificial y desarrollo de software, con experiencia en proyectos colaborativos y trabajos prácticos de programación.",
-    valueTitle: "Propuesta de valor",
-    valueCopy: "Aporto organización, curiosidad técnica y una forma de trabajar orientada a resolver problemas con claridad.",
+    profileTitle: "Un perfil técnico con base fuerte, curiosidad práctica y atención al detalle.",
+    profileCopy: "Me interesa especialmente la automatización, la inteligencia artificial y el desarrollo de internet y webs. Busco entornos donde aplicar conocimientos técnicos, afrontar retos nuevos y colaborar con equipos que valoren la claridad, la organización y la mejora continua.",
+    valueOneTitle: "Automatización",
+    valueOneCopy: "Scripts en Python para facilitar validación, análisis y procesos repetitivos.",
+    valueTwoTitle: "Razonamiento",
+    valueTwoCopy: "Base en algoritmia, estructuras de datos, programación orientada a objetos y pensamiento lógico.",
+    valueThreeTitle: "Producto web",
+    valueThreeCopy: "Interfaces y demos jugables construidas con HTML, CSS y JavaScript.",
     projectsEyebrow: "Proyectos",
-    projectsTitle: "Trabajo académico y técnico que muestra mi base como desarrollador.",
-    projectOneMeta: "Universidad",
-    projectOneTitle: "Proyectos colaborativos de programación",
-    projectOneCopy: "Desarrollo de trabajos prácticos en equipo dentro del grado, aplicando programación, algoritmia y pensamiento analítico.",
-    projectOneA: "Python y C++",
-    projectOneB: "Estructuras de datos y algoritmos",
-    projectOneC: "Colaboración y documentación técnica",
-    projectTwoMeta: "Computación",
-    projectTwoTitle: "Formación en IA y desarrollo de software",
-    projectTwoCopy: "Aprendizaje aplicado en inteligencia artificial, bases de datos y desarrollo de soluciones software dentro del itinerario académico.",
-    projectTwoA: "Inteligencia artificial",
-    projectTwoB: "SQL y análisis de datos",
-    projectTwoC: "Razonamiento lógico y resolución de problemas",
-    projectThreeMeta: "GitHub",
-    projectThreeTitle: "Repositorio de proyectos desarrollados",
-    projectThreeCopy: "Espacio donde recopilo proyectos y prácticas técnicas para mostrar evolución, herramientas usadas y resultados.",
-    projectThreeA: "Código y ejercicios propios",
-    projectThreeB: "Prácticas universitarias",
-    projectThreeC: "Mejora continua del perfil técnico",
-    playableEyebrow: "Proyectos desarrollados disponibles",
-    playableTitle: "Demos online listas para probar directamente desde el navegador.",
+    projectsTitle: "Demos reales para probar, código para revisar y práctica técnica aplicada.",
+    projectsNote: "Aquí muestro algunas demos visitables; en GitHub hay más proyectos desarrollados durante la carrera y por cuenta propia.",
+    githubLink: "Ver GitHub",
     projectBlackjackMeta: "Juego online",
     projectBlackjackTitle: "Blackjack 21",
-    projectBlackjackCopy: "Juego interactivo de Blackjack con sistema de fichas, apuestas, dealer automatico y deteccion de Blackjack natural.",
-    projectBlackjackA: "HTML, CSS y JavaScript",
-    projectBlackjackB: "Logica de juego y estados",
-    projectBlackjackC: "Demo jugable en navegador",
+    projectBlackjackCopy: "Proyecto desarrollado también con Python; la demo disponible aquí es una versión simplificada en HTML, CSS y JavaScript para poder probarla desde el navegador.",
+    tagGameState: "Estados de juego",
     projectBlackjackLink: "Jugar online",
-    projectCodeLink: "Ver codigo",
+    projectCodeLink: "Código",
     projectFruityMeta: "Juego online",
     projectFruityTitle: "Fruity Pairs",
-    projectFruityCopy: "Juego de memoria con tematica de frutas creado con Python y Pygame, con animaciones, dificultades y ranking local.",
-    projectFruityA: "Python y Pygame",
-    projectFruityB: "Animacion de cartas y logica de parejas",
-    projectFruityC: "Ranking local guardado en JSON",
+    projectFruityCopy: "Juego de memoria con temática de frutas creado con Python y Pygame, adaptado como demo web con animaciones, dificultades y ranking local.",
+    tagMemory: "Memoria",
     projectFruityLink: "Jugar online",
-    projectTaskFlowMeta: "Aplicacion online",
+    projectTaskFlowMeta: "Aplicación online",
     projectTaskFlowTitle: "TaskFlow",
-    projectTaskFlowCopy: "Aplicacion de tareas para organizar prioridades, fechas limite, estados y busqueda con persistencia local.",
-    projectTaskFlowA: "HTML, CSS y JavaScript",
-    projectTaskFlowB: "Filtros, ordenacion y busqueda",
-    projectTaskFlowC: "Datos guardados con localStorage",
+    projectTaskFlowCopy: "Aplicación de tareas para organizar prioridades, fechas límite, estados, búsqueda y persistencia local.",
     projectTaskFlowLink: "Abrir app",
     experienceEyebrow: "Experiencia y educación",
-    experienceTitle: "Una trayectoria orientada a tecnología, aprendizaje y enseñanza.",
-    dateUab: "Sep 2022 - Actualidad",
+    experienceTitle: "Tecnología, validación, enseñanza y aprendizaje continuo.",
+    dateElectrans: "May 2026 - Jul 2026",
+    electransTitle: "Prácticas curriculares · ELECTRANS, Calidad / RAMS",
+    electransCopy: "Participación en proyectos vinculados a seguridad ferroviaria, procesos de calidad, validación de software, revisión de evidencias técnicas y automatización con Python.",
+    dateUab: "Sep 2022 - Jul 2026",
     uabTitle: "Grado en Ingeniería Informática, mención en Computación",
-    uabCopy: "Universitat Autònoma de Barcelona. Formación en estructuras de datos, algoritmia, programación, inteligencia artificial y desarrollo de software.",
+    uabCopy: "Universitat Autònoma de Barcelona. Formación en programación, estructuras de datos, algoritmia, inteligencia artificial, machine learning y visión por computadora.",
     dateTutor: "Oct 2023 - Jun 2024",
-    tutorTitle: "Profesor de Matemáticas, refuerzo académico",
-    tutorCopy: "Maths Advantage Sabadell. Clases individuales y en grupo para estudiantes de Primaria, ESO y Bachillerato, con foco en matemáticas y resolución de problemas.",
-    dateBach: "Sep 2020 - Jun 2022",
-    bachTitle: "Bachillerato Científico-Tecnológico",
-    bachCopy: "IES Ferran Casablancas. Asignaturas destacadas: Matemáticas, Física, Química, Biología y Tecnología.",
+    tutorTitle: "Profesor de Matemáticas · Maths Advantage Sabadell",
+    tutorCopy: "Clases individuales y en grupo para Primaria, ESO y Bachillerato, con refuerzo en matemáticas y física, resolución de problemas y seguimiento personalizado.",
     skillsEyebrow: "Habilidades",
-    skillsTitle: "Tecnologías, idiomas y fortalezas personales.",
-    technicalSkills: "Habilidades técnicas",
+    skillsTitle: "Herramientas técnicas, competencias y comunicación multilingüe.",
+    technicalSkills: "Stack técnico",
+    levelAdvanced: "Avanzado",
+    levelUpperMid: "Intermedio alto",
+    levelBasicMid: "Básico-intermedio",
+    competenciesTitle: "Competencias destacadas",
+    compOop: "Programación orientada a objetos",
+    compFast: "Organización y aprendizaje rápido",
+    compTeam: "Trabajo en equipo",
+    compVision: "Visión por computadora",
+    compLogic: "Pensamiento lógico y analítico",
     languagesTitle: "Idiomas",
-    languageChinese: "Chino · Nativo",
+    languageChinese: "Chino · Nativo / alto",
     languageSpanish: "Español · C2",
-    languageCatalan: "Catalán · C1",
+    languageCatalan: "Catalán · C2",
     languageEnglish: "Inglés · B2",
     contactEyebrow: "Contacto",
-    contactTitle: "Abierto a nuevas oportunidades y proyectos.",
-    contactCopy: "Puedes contactarme por email, teléfono o visitar mis perfiles profesionales."
+    contactTitle: "Abierto a oportunidades junior, prácticas y nuevos retos tecnológicos.",
+    contactCopy: "Si buscas a alguien con base técnica, capacidad de aprendizaje y ganas de construir, podemos hablar."
   },
   en: {
     navProfile: "Profile",
     navProjects: "Projects",
     navExperience: "Experience",
+    navSkills: "Skills",
     navContact: "Contact",
-    heroEyebrow: "Professional portfolio",
-    heroTitle: "Computer engineering student focused on computing, artificial intelligence, and software development.",
-    heroCopy: "I am a creative, organized, and proactive person with strong adaptability and motivation to keep growing academically and professionally. I am interested in applying my technical skills to real projects and helping teams achieve their goals.",
+    statusLabel: "Available for junior challenges",
+    statusValue: "Software · AI · Automation",
+    heroEyebrow: "Technical portfolio",
+    heroTitle: "Computer Engineering graduate focused on software, automation, data analysis, and artificial intelligence.",
+    heroCopy: "Computer Engineering graduate specialized in Computing at UAB, with experience in software validation, Python automation, web projects, and mathematics teaching.",
     heroPrimary: "View projects",
+    heroCv: "Download CV",
     heroSecondary: "Contact",
-    role: "Computer Engineer",
-    factLocation: "Location",
-    factEducation: "Education",
-    factEducationValue: "Bachelor's Degree in Computer Engineering, UAB",
-    factFocus: "Focus",
-    factFocusValue: "Computing, AI, and software",
+    signalDegree: "Education",
+    signalDegreeValue: "Computer Engineering · UAB",
+    signalStack: "Stack",
+    signalLanguages: "Languages",
     profileEyebrow: "Profile",
-    profileTitle: "Fast learning, logical thinking, and a practical mindset.",
-    profileCopy: "I am currently studying Computer Engineering with a specialization in Computing at Universitat Autònoma de Barcelona. My training includes data structures, algorithmics, programming, artificial intelligence, and software development, with experience in collaborative projects and practical programming assignments.",
-    valueTitle: "Value proposition",
-    valueCopy: "I bring organization, technical curiosity, and a clear problem-solving approach to my work.",
+    profileTitle: "A technical profile with a strong foundation, practical curiosity, and attention to detail.",
+    profileCopy: "I am especially interested in automation, artificial intelligence, and internet and web development. I look for environments where I can apply technical knowledge, face new challenges, and collaborate with teams that value clarity, organization, and continuous improvement.",
+    valueOneTitle: "Automation",
+    valueOneCopy: "Python scripts to support validation, analysis, and repetitive processes.",
+    valueTwoTitle: "Reasoning",
+    valueTwoCopy: "Foundation in algorithms, data structures, object-oriented programming, and logical thinking.",
+    valueThreeTitle: "Web product",
+    valueThreeCopy: "Interfaces and playable demos built with HTML, CSS, and JavaScript.",
     projectsEyebrow: "Projects",
-    projectsTitle: "Academic and technical work that reflects my foundation as a developer.",
-    projectOneMeta: "University",
-    projectOneTitle: "Collaborative programming projects",
-    projectOneCopy: "Team-based practical assignments developed during my degree, applying programming, algorithmics, and analytical thinking.",
-    projectOneA: "Python and C++",
-    projectOneB: "Data structures and algorithms",
-    projectOneC: "Collaboration and technical documentation",
-    projectTwoMeta: "Computing",
-    projectTwoTitle: "Training in AI and software development",
-    projectTwoCopy: "Applied learning in artificial intelligence, databases, and software solution development within my academic path.",
-    projectTwoA: "Artificial intelligence",
-    projectTwoB: "SQL and data analysis",
-    projectTwoC: "Logical reasoning and problem solving",
-    projectThreeMeta: "GitHub",
-    projectThreeTitle: "Repository of developed projects",
-    projectThreeCopy: "A space where I collect projects and technical assignments to show progress, tools used, and results.",
-    projectThreeA: "Personal code and exercises",
-    projectThreeB: "University assignments",
-    projectThreeC: "Continuous improvement of my technical profile",
-    playableEyebrow: "Available developed projects",
-    playableTitle: "Online demos ready to try directly in the browser.",
+    projectsTitle: "Real demos to try, code to review, and applied technical practice.",
+    projectsNote: "These are selected playable demos; GitHub includes more projects built during my degree and on my own.",
+    githubLink: "View GitHub",
     projectBlackjackMeta: "Online game",
     projectBlackjackTitle: "Blackjack 21",
-    projectBlackjackCopy: "Interactive Blackjack game with chips, betting, automatic dealer turns, and natural Blackjack detection.",
-    projectBlackjackA: "HTML, CSS, and JavaScript",
-    projectBlackjackB: "Game logic and state handling",
-    projectBlackjackC: "Playable browser demo",
+    projectBlackjackCopy: "Project also developed with Python; the demo available here is a simplified HTML, CSS, and JavaScript version so it can be tested directly in the browser.",
+    tagGameState: "Game states",
     projectBlackjackLink: "Play online",
-    projectCodeLink: "View code",
+    projectCodeLink: "Code",
     projectFruityMeta: "Online game",
     projectFruityTitle: "Fruity Pairs",
-    projectFruityCopy: "Fruit-themed memory card game built with Python and Pygame, including animations, difficulty modes, and local ranking.",
-    projectFruityA: "Python and Pygame",
-    projectFruityB: "Card animation and pair-matching logic",
-    projectFruityC: "Local ranking saved in JSON",
+    projectFruityCopy: "Fruit-themed memory game created with Python and Pygame, adapted as a web demo with animations, difficulty modes, and local ranking.",
+    tagMemory: "Memory",
     projectFruityLink: "Play online",
     projectTaskFlowMeta: "Online app",
     projectTaskFlowTitle: "TaskFlow",
-    projectTaskFlowCopy: "Task management app for organizing priorities, deadlines, status, and search with local persistence.",
-    projectTaskFlowA: "HTML, CSS, and JavaScript",
-    projectTaskFlowB: "Filters, sorting, and search",
-    projectTaskFlowC: "Data saved with localStorage",
+    projectTaskFlowCopy: "Task app for organizing priorities, deadlines, status, search, and local persistence.",
     projectTaskFlowLink: "Open app",
     experienceEyebrow: "Experience and education",
-    experienceTitle: "A path focused on technology, learning, and teaching.",
-    dateUab: "Sep 2022 - Present",
-    uabTitle: "Bachelor's Degree in Computer Engineering, specialization in Computing",
-    uabCopy: "Universitat Autònoma de Barcelona. Training in data structures, algorithmics, programming, artificial intelligence, and software development.",
+    experienceTitle: "Technology, validation, teaching, and continuous learning.",
+    dateElectrans: "May 2026 - Jul 2026",
+    electransTitle: "Curricular internship · ELECTRANS, Quality / RAMS",
+    electransCopy: "Participation in projects related to railway safety, quality processes, software validation, technical evidence review, and Python automation.",
+    dateUab: "Sep 2022 - Jul 2026",
+    uabTitle: "Computer Engineering Degree, Computing specialization",
+    uabCopy: "Universitat Autònoma de Barcelona. Training in programming, data structures, algorithms, artificial intelligence, machine learning, and computer vision.",
     dateTutor: "Oct 2023 - Jun 2024",
-    tutorTitle: "Mathematics Tutor, academic support",
-    tutorCopy: "Maths Advantage Sabadell. Individual and group classes for Primary, Secondary, and Bachillerato students, focused on mathematics and problem-solving skills.",
-    dateBach: "Sep 2020 - Jun 2022",
-    bachTitle: "Scientific-Technological Bachillerato",
-    bachCopy: "IES Ferran Casablancas. Highlighted subjects: Mathematics, Physics, Chemistry, Biology, and Technology.",
+    tutorTitle: "Mathematics Tutor · Maths Advantage Sabadell",
+    tutorCopy: "Individual and group lessons for Primary, Secondary, and Bachillerato students, with support in mathematics and physics, problem solving, and personalized follow-up.",
     skillsEyebrow: "Skills",
-    skillsTitle: "Technologies, languages, and personal strengths.",
-    technicalSkills: "Technical skills",
+    skillsTitle: "Technical tools, competencies, and multilingual communication.",
+    technicalSkills: "Technical stack",
+    levelAdvanced: "Advanced",
+    levelUpperMid: "Upper-intermediate",
+    levelBasicMid: "Basic-intermediate",
+    competenciesTitle: "Key competencies",
+    compOop: "Object-oriented programming",
+    compFast: "Organization and fast learning",
+    compTeam: "Teamwork",
+    compVision: "Computer vision",
+    compLogic: "Logical and analytical thinking",
     languagesTitle: "Languages",
-    languageChinese: "Chinese · Native",
+    languageChinese: "Chinese · Native / fluent",
     languageSpanish: "Spanish · C2",
-    languageCatalan: "Catalan · C1",
+    languageCatalan: "Catalan · C2",
     languageEnglish: "English · B2",
     contactEyebrow: "Contact",
-    contactTitle: "Open to new opportunities and projects.",
-    contactCopy: "You can reach me by email or phone, or visit my professional profiles."
+    contactTitle: "Open to junior opportunities, internships, and new technology challenges.",
+    contactCopy: "If you are looking for someone with a technical foundation, learning ability, and motivation to build, let’s talk."
   }
 };
 
 const languageButtons = document.querySelectorAll(".lang-button");
 const translatableNodes = document.querySelectorAll("[data-i18n]");
+const cvLink = document.querySelector("[data-cv-link]");
+const cvFiles = {
+  es: "assets/CV-ESPAÑOL.pdf",
+  en: "assets/CV-ENGLISH.pdf"
+};
+
+function readStoredLanguage() {
+  try {
+    return localStorage.getItem("portfolioLanguage");
+  } catch {
+    return null;
+  }
+}
+
+function storeLanguage(language) {
+  try {
+    localStorage.setItem("portfolioLanguage", language);
+  } catch {
+    // Ignore storage errors in private browsing or restricted contexts.
+  }
+}
 
 function setLanguage(language) {
+  const dictionary = translations[language] || translations.es;
   document.documentElement.lang = language;
+
   translatableNodes.forEach((node) => {
     const key = node.dataset.i18n;
-    node.textContent = translations[language][key];
+    if (dictionary[key]) {
+      node.textContent = dictionary[key];
+    }
   });
+
   languageButtons.forEach((button) => {
-    button.classList.toggle("active", button.dataset.lang === language);
-    button.setAttribute("aria-pressed", String(button.dataset.lang === language));
+    const isActive = button.dataset.lang === language;
+    button.classList.toggle("active", isActive);
+    button.setAttribute("aria-pressed", String(isActive));
   });
-  localStorage.setItem("portfolioLanguage", language);
+
+  if (cvLink) {
+    cvLink.href = cvFiles[language] || cvFiles.es;
+  }
+
+  storeLanguage(language);
 }
 
 languageButtons.forEach((button) => {
   button.addEventListener("click", () => setLanguage(button.dataset.lang));
 });
 
-setLanguage(localStorage.getItem("portfolioLanguage") || "es");
+document.querySelectorAll(".section, .project-card, .skill-panel, .timeline-item").forEach((node) => {
+  node.classList.add("reveal");
+});
+
+function updateScrollProgress() {
+  const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+  const progress = scrollable > 0 ? window.scrollY / scrollable : 0;
+  document.documentElement.style.setProperty("--scroll-progress", String(Math.min(Math.max(progress, 0), 1)));
+}
+
+window.addEventListener("scroll", updateScrollProgress, { passive: true });
+window.addEventListener("resize", updateScrollProgress);
+updateScrollProgress();
+
+if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.14 });
+
+  document.querySelectorAll(".reveal").forEach((node) => observer.observe(node));
+} else {
+  document.querySelectorAll(".reveal").forEach((node) => node.classList.add("is-visible"));
+}
+
+setLanguage(readStoredLanguage() || "es");
